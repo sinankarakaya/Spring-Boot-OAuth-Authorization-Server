@@ -1,0 +1,13 @@
+server:
+  port: 7070
+
+jwt:
+  keystorePassword: Zxcv1234
+  keystorePath: jks/auth-service.keystore
+  keystoreAlias: auth-service
+  clientId: eria-app
+  client-secret: Zxcv1234
+  accessTokenValiditySeconds: 43200 #12 HOURS
+  authorizedGrantTypes: password, authorization_code, refresh_token
+  refreshTokenValiditySeconds: 2592000 # 30 DAYS
+  redirectUrl: http://localhost:7070/login/oauth/auth_code
